@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#define MAX_STRING_LEN 32
+#define MAX_STRING_LEN 128
 
 char origString[MAX_STRING_LEN];
 char revString[MAX_STRING_LEN];
