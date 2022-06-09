@@ -12,10 +12,11 @@ int main (int argc, char **argv)
 	fgets(origString, MAX_STRING_LEN, stdin);
 	origString[strlen(origString) - 1] = '\0'; //newline begone
 	
-	printf("The string you typed was \"%s\".%c", origString, '\n');
-	for(int i = 0; i < strlen(origString) - 1; i++)
+	printf("The string you typed was \"%s\".%c", origString, '\n'
+);
+	for(int i = 0; i < strlen(origString); i++)
 	{
-		revString[strlen(origString) - 2 - i] = origString[i];
+		revString[strlen(origString) - 1 - i] = origString[i];
 	}
 	printf("The reverse of that string is \"%s\".%c", revString, '\n');
 	return 0;
