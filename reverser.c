@@ -19,5 +19,7 @@ int main (int argc, char **argv)
 		revString[strlen(origString) - 1 - i] = origString[i];
 	}
 	printf("The reverse of that string is \"%s\".%c", revString, '\n');
+	printf("Press ENTER to continue.");
+	getchar();
 	return 0;
 }
